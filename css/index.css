@@ -1,0 +1,27 @@
+/* 顶部盒子 */
+.topbox{
+    
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+/* 中部盒子 */
+.centerbox{
+    font-size: 35px;
+    line-height: 35px;
+    color: red;
+}
+
+/* 小米商城练习 */
+.xiaomi a{
+    display: block;
+    margin-top: 20px;
+    height: 160px;
+    width: 100px;
+    background-color: beige;
+    text-align: center;
+    line-height: 188%;
+}

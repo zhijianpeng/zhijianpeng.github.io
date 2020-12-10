@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="小米官网直营小米公司旗下所有产品，包括小米手机系列小米10 Pro 、小米9、小米MIX Alpha，Redmi 红米系列Redmi Note 9、Redmi K30，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持.">
+    <meta name="keywords" content="小米,redmi,小米10,Redmi Note 9,小米MIX Alpha,小米商城">
+    <title>小米商城 - 小米10 Pro、Redmi Note 9、小米MIX Alpha，小米电视官方网站</title>
+    <!-- 引入表也是有顺序的，把link放在后面就全没了！ -->
+    <!-- 清除样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- 字体库，放在后点，不然字体格式显示不了 -->
+    <link rel="stylesheet" href="./fontawsome/css/all.css">
+    <link rel="stylesheet" href="./aicon/iconfont.css">
+
+    <!-- 共用css放在稍微后点 -->
+    <link rel="stylesheet" href="./css/base.css">
+
+    <!-- 本命css要放在最后 -->
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 置顶广告 -->
+    <!-- 广告写成了背景图片 -->
+    <div class="topAD">
+        <a href=""></a>
+    </div>
+
+    <!-- 选项栏 -->
+    <!-- 注意高度坍塌 -->
+    <div class="topbar_wrapper clearfix">
+
+        <!-- 正中间的才是选项栏 -->
+        <div class="menu w">
+
+            <!-- 选项栏左侧服务类选项 -->
+            <ul class="service">
+                <li><a href="">小米商城</a><span>|</span></li>
+                <li><a href="">MIUI</a><span>|</span></li>
+                <li><a href="">loT</a><span>|</span></li>
+                <li><a href="">云服务</a><span>|</span></li>
+                <li><a href="">天星数科</a><span>|</span></li>
+                <li><a href="">有品</a><span>|</span></li>
+                <li><a href="">小爱开放平台</a><span>|</span></li>
+                <li><a href="">企业团购</a> <span>|</span></li>
+                <li><a href="">资质证照</a> <span>|</span></li>
+                <li><a href="">协议规则</a><span>|</span> </li>
+
+
+                <li>
+                    <!-- 下拉二维码 -->
+                    <a class="downloadApp" href="">下载app
+                        <div class="QRcode">
+                            <img src="./img/小米二维码.png" alt="">
+                            小米商城APP</div>
+                    </a>
+                    <span>|</span>
+                </li>
+
+
+                <li><a href="">智能生活</a><span>|</span> </li>
+                <li><a href="">Select Location</a> </li>
+            </ul>
+
+            <!-- 选项栏最右侧购物车 -->
+            <!-- 因为在最右所以要在前面，不然float后就不是最右了 -->
+            <ul class="shopping">
+                <li>
+                    <a href="">
+                        <i class="fas fa-shopping-cart">
+                        </i>
+                        购物车（0）
+                    </a>
+
+                    <!-- 鼠标移入购物车出现已选商品 -->
+                    <div class="selected">购物车中还没有商品，赶紧选购吧！</div>
+                </li>
+            </ul>
+
+            <!-- 选项栏右侧登录设置 -->
+            <ul class="logon">
+                <li><a href="">登录</a><span>|</span></li>
+                <li><a href="">注册</a><span>|</span></li>
+                <li><a href="">消息通知</a></li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- 上中部搜索栏 -->
+    <div class="search_wrapper">
+        <!-- 搜索栏的搜索部分选项,其大小需要居中，并不是全屏大小 -->
+        <div class="search w clearfix">
+            <!-- 左侧的小米图标 -->
+            <!-- <img src="./img/mi-logo.png" alt="xiaomi"> -->
+            <!-- 使用背景图片添加 -->
+            <a href="" class="mi_image clearfix">
+                <div class="mi_home"></div>
+                <div class="mi_logo"></div>
+            </a>
+            <!-- 预留在小米图标右侧的空白 -->
+            <div class="block"><a href="" class="twelve"></a></div>
+
+            <!-- 可供选择的搜索选项 -->
+            <ul class="search_options">
+                <li><a href="">小米手机</a></li>
+                <li><a href="">Redmi手机</a></li>
+                <li><a href="">电视</a></li>
+                <li><a href="">笔记本</a></li>
+                <li><a href="">家电</a></li>
+                <li><a href="">路由器</a></li>
+                <li><a href="">智能硬件</a></li>
+                <li><a href="">服务</a></li>
+                <li><a href="">社区</a></li>
+            </ul>
+
+            <!-- 搜索栏右侧搜索框 -->
+            <div class="search_bar">
+                <form action="">
+                    <!-- 搜索框 -->
+                    <input type="search" class="search_inp" name="1111" id="搜索" placeholder="小米10">
+                    <!-- 搜索框右侧按钮 -->
+                    <button class="search_btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中部分类栏 -->
+    <div class="Category_wrapper"></div>
+
+    <!-- 下部展示栏 -->
+    <div class="display_wrapper"></div>
+</body>
+
+</html>

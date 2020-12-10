@@ -1,0 +1,12 @@
+/* 设置默认宽度 */
+.w{
+    width: 1111px;
+    margin: 0 auto;
+}
+
+/* 清除坍塌 */
+.clearfix::before,.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}

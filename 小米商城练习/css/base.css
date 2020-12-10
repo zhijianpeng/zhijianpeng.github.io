@@ -1,0 +1,23 @@
+/* 一些基础共用的css */
+
+/* 清除坍塌 */
+.clearfix::before,.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 默认最小宽度（防止结构乱掉）字体大小，颜色 */
+body{
+    min-width: 1226px;
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+
+/* 用来表示中间容器的宽度 */
+.w{
+    /* 固定容器的宽度 */
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;
+}

@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1606920484752'); /* IE9 */
+  src: url('iconfont.eot?t=1606920484752#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOMAAsAAAAAB8AAAAM9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCZIIrATYCJAMQCwoABCAFhG0HXRuyBsiemjyBtI0CCiQ2UzZwvIWJh//Gvt03M2uq1YEq2lRC1CjWEnU7hwiJbhbS/3Eu/w3ogN0o2ywx9tqkV0yXy8jh/0IBg5twn0kh6Q3eXOGGvQP8rqXX0otx/A5pHr3+BwTe+Me906b4fPYtl7kmRV2AcUCBjjkp0QIpQW4Yu6AlriZQb1imiMPmzkGIV5idAnFfkQWIzyiVhsxQK1RXjCziLcSoTc8iPwBvgs/HT/kRT1KVmT1P3mySoPZL+afCqJWtYNJDAWs6Pdg4MhaBQtyuNF4VFQUXRalXfxNtG6hVK/Gl/IP2qXALZB9FWGv95ZGETFQz0xvBJgplvpQ7CIkvGkLwrTBNhg/SvhY1uAU8RPjO7YuQSl3dnMfhqOmI94knN/vn/IY/fEp38440tvMkanpxmplwneeGC7W82GRHD9yGjnd35fFdp2B9xeserOwgbbt2YTVPdzP2nTuB9vHx2Scvuna/yp8+vXjroXz4kX3zgXTgfg+MHV3RiwtKGoob3sIRj2E9YOW90hHs/zeX81Ojc76TVDnTE72uqtSZzi4yV5bxpLaiQZ/isFW1T3NC+0rsUq8tW4otgl6gQkrrdvyG674fff3q0KAs8ka2sJn9xe2u/P/tbSQXoPIUiKoFIP3Nf+Y7Gk/8fHfJHfyvtRfw+fv7SVxSKVp+AvB6WZ1Z/4HVsaJoHFNVisJ1mLqp2El1klCvHm8/Sru3U4i7OqcTanUlkNQYgqzWJLrgF6FKg02oVmsH6i1oGd+gAxMlSh3mbQMQWl2GpNkRZK3uoAv+DVTp9h2qtUYU1DsfxIwNpkOxhQwLHEsouIwUkZrE1nBbmNmP5XldYGlOQBjGLKx4UF52bj7Sgk3MpugTXpDzOSeIMGqgZrAe1nWKLEZVLPLsEOdWeU4OqXpStkgNsDnAYAIOkyBByxCFiDIRrzZnK7y/HyabpxOwhrIq9TCMCVMaR/Jky+2AbhGancpu5ZywBbJ8HEcgBEMZkGbQDNPpKMSqbqbCRFy20AC/pVyOVY10FWYvLzbecB3UMw8tkSJHiSq9Z0LUshRTFgXG6TzXFRNLT2F3dpg9k0HQZ/Jx8S0VBW4oAAAAAAA=') format('woff2'),
+  url('iconfont.woff?t=1606920484752') format('woff'),
+  url('iconfont.ttf?t=1606920484752') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1606920484752#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Shoppingcartoutlinedicon:before {
+  content: "\e66b";
+}
+
+.icon-vertical_line:before {
+  content: "\e63a";
+}
+
+.icon-location:before {
+  content: "\e834";
+}
+

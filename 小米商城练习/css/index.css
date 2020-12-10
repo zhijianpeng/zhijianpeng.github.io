@@ -1,0 +1,285 @@
+/* index界面的css */
+
+/* 置顶广告图片 */
+.topAD{
+    /* 宽度等于浏览器，高度固定 */
+    width: 100%;
+    height: 120px;
+    background-image: url(../img/置顶广告.jpg);
+    /* 图片很大，所以要设置位置居中，大小自动填充为cover覆盖 */
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+/* 广告图片是可以点的 */
+.topAD a{
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+/* 顶部导航条 */
+.topbar_wrapper{
+    width: 100%;
+    background-color: #333;
+    color: #b0b0b0;
+    /* 因为行高等于高度，所以直接不设高度，但是要注意高度坍塌问题 */
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* 服务选项向左，里面的列表都是左到右排列 */
+.service,.menu li{
+    float: left;
+}
+
+/* 注册选项，购物车居右 */
+.logon,.shopping{
+    float: right;
+}
+
+/* 因为a都不只是是点文字才行，所以要变块 */
+.menu a{
+    /* a字体颜色不知道为啥没弄上 */
+    display: inline-block;
+    height: 40px;
+    color: #b0b0b0;;
+}
+
+/* 间隔通过span写 */
+.menu span{
+    color: #424242;
+    display: inline-block;
+    margin: 0 7.2px;
+}
+
+/* 购物车底色改变 */
+.shopping a{
+    margin-left: 22px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(66, 66, 66);;
+}
+
+/* 所有a移入变白 */
+.menu a:hover{
+    color: white;
+}
+
+/* 购物车a移入背景颜色和字体都要变 */
+.shopping:hover  a{
+    background-color: white;
+    color: rgb(255, 113, 17);
+    
+}
+
+/* 下拉二维码 */
+.QRcode{
+    position: absolute;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    width: 120px;
+    height:150px ;
+    background-color: white;
+    /* 背景是白色，所以要有阴影才看的出来 */
+    box-shadow:  0 0 10px 0px rgba(95, 95, 95, 0.5);
+
+    left: -35px;
+
+    /* 一开始隐藏 */
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+
+    /* 慢慢显示动画过渡效果 */
+    transition:height 0.3s;
+}
+
+/* 下拉二维码图片 */
+.QRcode img{
+    width: 90px;
+    height: 90px;
+    /* 让字跑到下面，所以变块 */
+    display: block;
+    border: #333 1px solid;
+    border-radius: 2px;
+    margin:18px auto 0px;
+}
+
+/* 二维码上面的小三角,当鼠标移上去才有 */
+.downloadApp:hover::after{
+    display: block;
+    content: "";
+    line-height: 0;
+    width: 0;
+    height: 0;
+
+    /* 左右应该是黑色 */
+    border: 7px #333 solid;
+    /* 下边框白色 */
+    border-bottom-color: white;
+    /* 上边框隐形 */
+    border-top-width: 0;
+
+    /* 开启绝对定位 */
+    position: absolute;
+
+    /* 三角位于正下方 */
+    left: 40%;
+    bottom: 0;
+}
+
+/* 因为三角开了绝对定位，这个父元素要开相对定位方便定位 */
+.downloadApp{
+    position: relative;
+    left: 0;
+}
+
+/* 鼠标移入出现二维码 */
+.downloadApp:hover .QRcode{
+    /* display: block; */
+    height: 150px;
+}
+
+/* 购物车下面的已选物品栏 */
+.selected{
+    width: 316px;
+    height: 80px;
+    position: absolute;
+    color: #424242;
+    /* 为了上面不出现阴影，把层级调下 */
+    z-index: -5;
+    box-shadow: 0 0 5px rgba(95, 95, 95, 0.5);
+    text-align: center;
+    line-height: 80px;
+    right: 0;
+    
+    /* 同样的高度动画 */
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+/* 购物车变相对方便这个定位 */
+.shopping{
+    position: relative;
+    left: 0;
+}
+.shopping:hover .selected{
+    height: 80px;
+    z-index: 9999;
+}
+
+
+/* 搜索栏左侧小米图标的爸爸 */
+.mi_image{
+    float: left;
+    height:55px;
+    width:55px;
+    background-color:rgb(255, 113, 0);
+    margin: 22.5px 0;
+    position: relative;
+    overflow: hidden;
+}
+/* 左侧小米图标 */
+.mi_logo{
+    height:55px;
+    width:55px;
+    float: left;
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+    position: absolute;
+    left: 0;
+    transition: left 0.3s;
+}
+
+/* 鼠标移入左侧小米换家 */
+.mi_home{
+    float: left;
+    height:55px;
+    width:55px;
+    background-image: url(../img/mi-home.png);
+    background-position: center;
+    position: absolute;
+    left: -55px;
+    transition: left 0.3s;
+    
+}
+/* 小米换家的动画 */
+.mi_image:hover .mi_logo{
+    left:55px;
+}
+.mi_image:hover .mi_home{
+    left: 0;
+}
+
+/* 小米图标右侧的预留空白，方便活动使用 */
+.block{
+    float: left;
+    width: 165px;
+    height: 100px;
+    background-image: url(../img/小米双12.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0 15px;
+}
+.twelve{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 搜索选项栏 */
+.search_options,.search_options li{
+    float: left;
+}
+.search_options{
+    line-height: 100px;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    margin-left: -15px;
+}
+/* 可点的范围不止是文字 */
+.search_options li a{
+    padding: 19.5px 9.5px 19.5px 9.5px;
+}
+.search_wrapper{
+    height:100px;
+    box-shadow: 0 0  5px black;
+}
+
+.search_options li a:hover{
+    color:#ff6700;
+}
+
+/* 右侧搜索栏盒子 */
+.search_bar{
+    line-height: 100px;
+    height: 100px;
+    width: 298px;
+    float: right;
+}
+/* 搜索框 */
+.search_inp{
+    margin: 25px 0;
+    float: left;
+    width: 248px;
+    height: 48px;
+    padding-left: 10px;
+    border: 1px solid rgb(224, 224, 224);
+}
+/* 搜索确定按钮 */
+.search_btn{
+    float: left;
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 17.9px;
+    margin:25px 0;
+    color: rgb(97, 97, 97);
+    border-left: none;
+    
+}
