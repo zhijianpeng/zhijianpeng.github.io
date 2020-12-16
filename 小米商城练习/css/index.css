@@ -1,10 +1,15 @@
 /* index界面的css */
 
 /* 置顶广告图片 */
-.topAD{
+.topimg{
+    height: 120px;
+    width: 100%;
+}
+.ad{
     /* 宽度等于浏览器，高度固定 */
     width: 100%;
     height: 120px;
+    background-color: red;
     background-image: url(../img/置顶广告.jpg);
     /* 图片很大，所以要设置位置居中，大小自动填充为cover覆盖 */
     background-position: 50% 0;
@@ -12,7 +17,7 @@
 }
 
 /* 广告图片是可以点的 */
-.topAD a{
+.ad a{
     display: block;
     width: 100%;
     height: 120px;
@@ -94,6 +99,10 @@
 
     /* 慢慢显示动画过渡效果 */
     transition:height 0.3s;
+
+    background-color: white;
+
+    z-index: 9999;
 }
 
 /* 下拉二维码图片 */
@@ -154,7 +163,7 @@
     text-align: center;
     line-height: 80px;
     right: 0;
-    
+    background-color: white;
     /* 同样的高度动画 */
     height: 0px;
     overflow: hidden;
@@ -247,7 +256,6 @@
 }
 .search_wrapper{
     height:100px;
-    box-shadow: 0 0  5px black;
 }
 
 .search_options li a:hover{
@@ -260,6 +268,7 @@
     height: 100px;
     width: 298px;
     float: right;
+    position: relative;
 }
 /* 搜索框 */
 .search_inp{
@@ -270,6 +279,23 @@
     padding-left: 10px;
     border: 1px solid rgb(224, 224, 224);
 }
+/* 当鼠标移入输入框的变化 */
+.search_inp:hover{
+    border-color: rgb(176, 176, 176);
+}
+.search_inp:hover ~ .search_btn{
+    border-color: rgb(176, 176, 176);
+}
+
+/* 当被点击后输入框的变化 */
+.search_inp:focus{
+    border-color: #ff6700;
+}
+/* 当鼠标点击后按钮的变化 */
+.search_inp:focus ~ .search_btn{
+    border-color: #ff6700;
+}
+
 /* 搜索确定按钮 */
 .search_btn{
     float: left;
@@ -282,4 +308,98 @@
     color: rgb(97, 97, 97);
     border-left: none;
     
+}
+
+/* 搜索框被点击的展示框 */
+.search_show{
+    position: absolute;
+    top: 72px;
+    width: 248px;
+    height: 248px;
+    background-color: white;
+    line-height: 33px;
+    font-size: 10px;
+    border: 1px #ff6700 solid;
+    display: none;
+}
+/* 展示框中的每个链接 */
+.search_show a{
+    display: block;
+    padding-left: 10px;
+    width: 248px;
+    height: 30px;
+}
+
+/* 当鼠标移入链接的效果 */
+.search_show a:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+/* 当搜索框被点击，展示框显示 */
+.search_inp:focus ~ .search_show{
+    display: block;
+}
+
+/* 预留空白下面的搜索列表 */
+.Category_leftlist{
+    position: absolute;
+    top: 100px;
+    padding: 20px 0;
+    font-size: 14px;
+    color: white;
+    width: 234px;
+    height: 460px;
+    line-height: 42px;
+    background-color: rgba(105, 101, 101, 0.6);
+}
+.search{
+    position: relative;
+}
+/* 预留空白的每一个选项链接 */
+.Category_leftlist a{
+    display: block;
+    color: white;
+    padding-left: 30px;
+    width: 234px;
+    position: relative;
+}
+/* 链接右侧的图标 */
+.Category_leftlist a i{
+    position:absolute;
+    right: 30px;
+    top: 15px;
+
+}
+
+.Category_leftlist li:hover{
+    background-color: #ff6700;
+}
+
+/* 鼠标移入左侧分类列表出现的商品列表 */
+.goodslist{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 234px;
+    height: 460px;
+    width: 460px;
+    box-shadow: 0 0 1px rgb(176, 176, 176);
+    background-color: white;
+    z-index: 999;
+}
+.Category_leftlist li:hover ~ .goodslist{
+    display: block;
+}
+
+.show_img{
+    height: 460px;
+    background-image: url(../img/展示图片1.png);
+    background-position: center;
+    background-size: contain;
+}
+/* 展示的广告图片 */
+.show_img img{
+    height: 460px;
+    position: absolute;
+    z-index: -1;
 }

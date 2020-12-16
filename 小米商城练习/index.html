@@ -31,8 +31,11 @@
 <body>
     <!-- 置顶广告 -->
     <!-- 广告写成了背景图片 -->
-    <div class="topAD">
-        <a href=""></a>
+    <div class="topimg clearfix">
+        <div class="ad">
+            <a href=""></a>
+        </div>
+
     </div>
 
     <!-- 选项栏 -->
@@ -111,8 +114,26 @@
                 <div class="mi_logo"></div>
             </a>
             <!-- 预留在小米图标右侧的空白 -->
-            <div class="block"><a href="" class="twelve"></a></div>
+            <div class="block">
+                <a href="" class="twelve"></a>
 
+            </div>
+            <!-- 预留空白下面的分类列表，因为其他网页都是这样的，所以写成这样 -->
+            <div class="Category_leftlist">
+                <ul>
+                    <li><a href="">手机 电话卡<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">电视 盒子<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">笔记本 显示器<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">家电 插线板<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">出行 穿戴<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">智能 路由器<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">电源 配件<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">健康 儿童<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">耳机 音箱<i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="">生活 箱包<i class="fas fa-angle-right"></i></a></li>
+                    <div class="goodslist"></div>
+                </ul>
+            </div>
             <!-- 可供选择的搜索选项 -->
             <ul class="search_options">
                 <li><a href="">小米手机</a></li>
@@ -130,7 +151,21 @@
             <div class="search_bar">
                 <form action="">
                     <!-- 搜索框 -->
-                    <input type="search" class="search_inp" name="1111" id="搜索" placeholder="小米10">
+                    <input type="search" class="search_inp" name="1111" id="搜索" placeholder="小米10" autocomplete="on">
+                    <!-- 当搜索框被点击后显示的展示框 -->
+                    <div class="search_show">
+                        <!-- 里面显示的内容 -->
+                        <ul>
+                            <li><a href="">王一博手机</a></li>
+                            <li><a href="">Note9 新品</a></li>
+                            <li><a href="">小米10</a></li>
+                            <li><a href="">Redmi k30 pro</a></li>
+                            <li><a href="">卡丁车</a></li>
+                            <li><a href="">耳机</a></li>
+                            <li><a href="">空调</a></li>
+                            <li><a href="">全部商品</a></li>
+                        </ul>
+                    </div>
                     <!-- 搜索框右侧按钮 -->
                     <button class="search_btn"><i class="fas fa-search"></i></button>
                 </form>
@@ -139,7 +174,16 @@
     </div>
 
     <!-- 中部分类栏 -->
-    <div class="Category_wrapper"></div>
+    <div class="Category_wrapper w clearfix">
+        <div class="show_img w">
+            <img src="./img/展示图片1.png" alt="">
+            <img src="./img/展示图片2.png" alt="">
+            <img src="./img/展示图片3.jpg" alt="">
+            <img src="./img/展示图片4.png" alt="">
+            <img src="./img/展示图片5.png" alt="">
+        </div>
+
+    </div>
 
     <!-- 下部展示栏 -->
     <div class="display_wrapper"></div>
