@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时钟</title>
+    <style>
+        /* 表盘 */
+        .dial {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background-image: url(./img/dial.png);
+            background-size: contain;
+            background-color: rgba(22, 20, 20, .5);
+        }
+
+        /* 时针容器 */
+        .clock_hour {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            /* background-color: red; */
+            animation: hour_rotate 30000s linear infinite;
+        }
+
+        /* 分针容器 */
+        .clock_min {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            /* background-color: red; */
+            animation: hour_rotate 2500s linear infinite;
+        }
+
+        /* 秒针容器 */
+        .clock_s {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            /* background-color: red; */
+            animation: hour_rotate 50s steps(50) infinite;
+        }
+
+        /* 时针 */
+        .hourpin {
+            width: 5px;
+            height: 200px;
+            background-color: aqua;
+            margin: 0 auto;
+            transform: translateY(100px);
+        }
+
+        /* 分针 */
+        .minpin {
+            width: 5px;
+            height: 250px;
+            background-color: red;
+            margin: 0 auto;
+            transform: translateY(50px);
+        }
+
+        /* 秒针 */
+        .spin {
+            width: 5px;
+            height: 280px;
+            background-color: green;
+            margin: 0 auto;
+            transform: translateY(20px);
+        }
+
+        @keyframes hour_rotate {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 表盘 -->
+    <div class="dial">
+        <!-- 时针容器 -->
+        <div class="clock_hour">
+            <!-- 时针 -->
+            <div class="hourpin"></div>
+        </div>
+        <!-- 分针针容器 -->
+        <div class="clock_min">
+            <!-- 分针 -->
+            <div class="minpin"></div>
+        </div>
+        <!-- 时针容器 -->
+        <div class="clock_s">
+            <!-- 时针 -->
+            <div class="spin"></div>
+        </div>
+    </div>
+</body>
+
+</html>

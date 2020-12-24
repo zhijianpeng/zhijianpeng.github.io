@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .spritsbox {
+            margin: auto;
+            height: 470px;
+            width: 590px;
+            background-color: #bfa;
+            ;
+            position: relative;
+        }
+
+        /* div盒子的共有属性 */
+        .spritsbox div {
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            bottom: 25px;
+            border-radius: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+
+        /* 图片的共用属性 */
+        a img {
+            position: absolute;
+            height: 470px;
+            width: 590px;
+            top: -430px;
+        }
+
+        .box1 {
+            left: 40px;
+        }
+
+        .box2 {
+            left: 70px;
+        }
+
+        .box3 {
+            left: 100px;
+        }
+
+        .box4 {
+            left: 130px;
+        }
+
+        .box5 {
+            left: 160px;
+        }
+
+        .box6 {
+            left: 190px;
+        }
+
+        .box7 {
+            left: 220px;
+        }
+
+        .box1 a img {
+            left: -40px;
+        }
+
+        .box2 a img {
+            left: -70px;
+        }
+
+        .box3 a img {
+            left: -100px;
+        }
+
+        .box4 a img {
+            left: -130px;
+        }
+
+        .box5 a img {
+            left: -160px;
+        }
+
+        .box6 a img {
+            left: -190px;
+        }
+
+        .box7 a img {
+            left: -220px;
+        }
+
+        /* 外部可见圆点，因为父元素层级无法在子元素的图片前 */
+        .seebox {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+        }
+
+        .spritsbox div:hover {
+            z-index: 10;
+        }
+
+        .seebox:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spritsbox">
+        <div class="box1">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\1.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+        <div class="box2">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\2.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+        <div class="box3">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\3.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+        <div class="box4">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\4.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+        <div class="box5">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\5.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+        <div class="box6">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\6.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+        <div class="box7">
+            <a href="">
+                <img src="E:\学习记录\exercise\img\轮播图\7.jpg" alt="">
+            </a>
+            <div class="seebox"></div>
+        </div>
+    </div>
+</body>
+
+</html>

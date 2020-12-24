@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../04_font&background/fontawsome/css/all.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <title>电影卡片</title>
+    <style>
+        body {
+            background-color: #bfa;
+        }
+
+        /* 整个卡片 */
+        .outer {
+            /* 宽度固定，高度变化 */
+            width: 238px;
+            margin: 50px auto 0;
+            background-color: white;
+
+        }
+
+        /* 图片 */
+        .img_wrapper {
+            width: 238px;
+            height: 158px;
+            /* 用雪碧图去加图片 */
+            background-image: url(./img/电影卡片.png);
+            background-position: -652px -145px;
+        }
+
+        /* 简介栏 */
+        .textbox{
+            padding-left: 25px;
+            padding-right: 25px;
+            line-height: 200%;
+            padding-bottom: 30px;
+            margin-top: 10px;
+            border-bottom:  3px rgb(233, 233, 233) solid;
+        }
+
+        /* 星星评价栏 */
+        .starbox{
+            padding-left: 23px;
+            padding-right: 23px;
+            line-height: 300%;
+            color: rgb(221, 221, 221);
+        }
+
+        /* 电影名字 */
+        h1{
+            font-size: 18px;
+            color: rgb(113, 113, 113);
+        }
+
+        /* 电影类型 */
+        h2{
+            font-size: 14px;
+            color: rgb(172, 170, 170);
+        }
+        h2 span{
+            font-size: 20px;
+        }
+        
+        /* 影片介绍 */
+        p{
+            font-size: 13px;
+            color: rgb(172, 170, 170);
+            line-height: 150%;
+        }
+
+        /* facebook对齐方式 */
+        .stars :last-child{
+            font-size: 20px;
+            position: relative;
+            top: 2px;
+            left: 70px;
+        }
+
+        /* 亮星星颜色 */
+        .light{
+            color: rgb(185,203,65);
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 外部容器 -->
+    <div class="outer">
+        <!-- 图片容器 -->
+        <div class="img_wrapper">
+
+        </div>
+        <!-- 点评语容器 -->
+        <div class="textbox">
+            <!-- 电影名字 -->
+            <h1>白雪公主</h1>
+            <!-- 电影类型 -->
+            <h2><span class="iconfont icon-location"></span> 动画电影</h2>
+            <!-- 电影介绍 -->
+            <p>这个电影超级好看的，一定要去看，不然肯定后悔死了</p>
+        </div>
+
+        <!-- 评级星星容器 -->
+        <div class="starbox">
+            <!-- 评级的星星 -->
+            <ul class="stars">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <!-- 右侧facebook标签 -->
+                <li class="fab fa-facebook"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

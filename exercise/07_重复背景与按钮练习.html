@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重复背景和按钮</title>
+    <style>
+        .box1{
+            height: 239px;
+            background-image: url(./img/重复背景练习.png);
+            background-repeat: repeat-x;
+        }
+        a{
+            display: block;
+            height: 29px;
+            width: 93px;
+        }
+        a:active{
+            /* background-image: url(./img/按钮/active.png); */
+            background-image:url(./img/按钮/btn.png);
+            background-position: 186px 0;
+        }
+        a:hover{
+            /* background-image: url(./img/按钮/hover.png); */
+            background-image:url(./img/按钮/btn.png);
+            background-position: 93px 0;
+        }
+        a:link{ 
+            /* background-image: url(./img/按钮/link.png); */
+            background-image:url(./img/按钮/btn.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <a href="javascrpt:;" class="button"></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东导航条</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../04_font&background/fontawsome/css/all.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+            .nav{
+                height: 30px;
+                background-color: rgb(227, 228, 229);
+                font-size: 14px;
+                color: rgb(153, 153, 153);
+            }
+            .nav_box{
+                margin: 0 auto 0;
+                width: 1190px;
+                height: 100%;
+            }
+            .nav_box *{
+                height: 30px;
+                line-height: 30px;
+                vertical-align: top;
+            }
+            a.iconfont{
+                float: left;
+                height: 30px;
+                line-height: 30px;
+                color: red;
+                font-size: 20px;
+            }
+
+            span{
+                margin-left: 3px;
+                vertical-align: top;
+                color: rgb(153, 153, 153);
+                font-size: 14px;
+               
+            }
+            span.red:hover{
+                color: red;
+            }
+            a.iconfont:hover{
+                background-color: white;
+            }
+
+            a.login{
+                color: red;
+                margin-left: 10px;
+            }
+            ul{
+                float: right;
+            }
+            ul *{
+                float: left;
+            }
+            ul li:not(:first-child)::before{
+                float: left;
+                font-family: "iconfont" !important;
+                content: "\e63a"; 
+                margin-right: 3px;
+                
+            }
+            ul{
+                overflow: hidden;
+                
+            }
+            .fa-angle-down{
+                width: 2px;
+                font-size: 1px;
+                
+                
+            }
+            ul li{
+                margin-right: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_box">
+            <a class="iconfont icon-location" href=""><span class="red">广东</span></a>
+            <ul>
+                <li>
+                    <a class="logon" href=""><span class="red">你好,请登录</span></a>
+                    <a class="login" href="">免费注册</a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="red">我的订单</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="red">我的京东</span>
+                        <span class="fontawsome fas fa-angle-down"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="red">京东会员</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" style="color:red;" >
+                        企业采购
+                    </a>
+                    <span class="fontawsome fas fa-angle-down" ></span>
+                </li>
+                <li>
+                    <span>客户服务</span>
+                    <span class="fontawsome fas fa-angle-down"></span>
+                </li>
+                <li>
+                    <span>网站导航</span> 
+                    <span class="fontawsome fas fa-angle-down"></span>
+                </li>
+                <li><span>手机京东</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

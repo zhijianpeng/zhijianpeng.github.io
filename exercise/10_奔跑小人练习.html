@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑小人练习</title>
+    <style>
+        .box1{
+            width:1000px;
+            height:1000px;
+            background-color:#bfa;
+        }
+        .box2,.box3,.box4,.box5{
+            width:100px;
+            height:100px;
+            background-image: url(./img/trump_run.png);
+        }
+        .box1:hover .box2{
+            /* 虽然是6帧动画，但是因为背景图片默认是repeat的，所以steps（6）刚好 */
+            animation: trump_rundown 2s steps(6) infinite;
+            animation-iteration-count: infinite;
+        }
+        .box1:hover .box3{
+            animation: trump_runleft 2s steps(6) infinite;
+        }
+        .box1:hover .box4{
+            animation: trump_runright 2s steps(6) infinite;
+        }
+        .box1:hover .box5{
+            animation: trump_runup 2s steps(6) infinite;
+        }
+
+        @keyframes trump_rundown{
+        from{
+            background-position: 0 0;
+        }
+
+        to{
+            background-position: 600px 0;
+        }
+        }
+        @keyframes trump_runleft{
+        from{
+            background-position: 0 300px;
+        }
+
+        to{
+            background-position: 600px 300px;
+        }
+        }
+        @keyframes trump_runright{
+        from{
+            background-position: 0 200px;
+        }
+
+        to{
+            background-position: 600px 200px;
+        }
+        }
+        @keyframes trump_runup{
+        from{
+            background-position: 0 100px;
+        }
+
+        to{
+            background-position: 600px 100px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>

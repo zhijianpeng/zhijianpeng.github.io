@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老婆我爱你</title>
+    <style>
+        html{
+            perspective: 5200px;
+        }
+        .imgbox{
+            position: relative;
+            margin: 300px auto;
+            width: 520px;
+            height: 520px;
+            transform-style: preserve-3d;
+            transform: rotateY(45deg) rotateX(45deg);
+            animation: box_rotate 10s infinite linear;
+        }
+        .imgbox>div{
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            /* 透明效果 */
+            opacity: 0.7;
+        }
+
+        .up{
+            background-image: url(./img/老婆/1.jpg);
+            background-position: 0 -250px;
+            background-size:cover;
+            transform: translateY(-260px) rotateX(-90deg);
+        }
+        .down{
+            background-image: url(./img/老婆/3.jpg);
+            background-position: 0 -60px;
+            background-size:cover;
+            transform: translateY(260px) rotateX(90deg);
+        }
+        .left{
+            background-image: url(./img/老婆/4.jpg);
+            background-position: 0 -60px;
+            background-size:cover;
+            transform: translatex(-260px) rotateY(90deg);
+        }
+        .right{
+            background-image: url(./img/老婆/5.jpg);
+            background-position: 0 -60px;
+            background-size:cover;
+            transform: translatex(260px) rotateY(-90deg);
+        }
+        .forward{
+            background-image: url(./img/老婆/7.jpg);
+            background-position: 0 -150px;
+            background-size:cover;
+            transform: translateZ(260px);
+        }
+        .back{
+            background-image: url(./img/老婆/8.jpg);
+            background-position: 0 -150px;
+            background-size:cover;
+            transform: translateZ(-260px) rotateY(180deg);
+        }
+        @keyframes box_rotate{
+            from{
+                transform: rotateX(45deg) rotateY(45deg);
+            }
+            to{
+                transform: rotateX(405deg) rotateY(405deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox">
+        <div class="up"></div>
+        <div class="down"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="forward"></div>
+        <div class="back"></div>
+    </div>
+</body>
+</html>

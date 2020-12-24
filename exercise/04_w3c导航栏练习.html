@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3cschool</title>
+    <style>
+        .nav{
+            width: 1470px;
+            height: 60px;
+        }
+        .nav div{
+            width: 210px;
+            height: 60px;
+            float: left;
+            background-color: rgb(232, 231, 227);
+        }
+        .nav div>a{
+            /* 为了字体居中 ，先换成行内块，再把宽度变成一样的*/
+            color: rgba(119, 119, 119);
+            display: inline-block;
+            width: 210px;
+            /* 高度不一样，然后用外边距向下退让上下居中 */
+            height: 30px;
+            font-size: 20px;
+            margin-top: 15px;
+            /* 水平居中 */
+            text-align:center;
+            text-decoration: none;
+        }
+        .nav div:hover{
+            background-color: rgb(63, 63, 63);
+        }
+        .nav div a:hover{
+            color: rgb(232, 231, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div><a href="">HTML/CSS</a></div>
+        <div><a href="">Browser Side</a></div>
+        <div><a href="">Server Side</a></div>
+        <div><a href="">Programming</a></div>
+        <div><a href="">XML</a></div>
+        <div><a href="">Web Building</a></div>
+        <div><a href="">Reference</a></div>
+    </div>
+</body>
+
+</html>

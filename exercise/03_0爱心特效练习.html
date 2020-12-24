@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我爱你</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .lovebox {
+            width: 666px;
+            height: 666px;
+            background-color: pink;
+        }
+
+        .lovebox>div {
+
+            background-color: red;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            float: left;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            width: 125px;
+            height: 125px;
+        }
+
+        .box1,
+        .box3 {
+            border-top-left-radius: 100%;
+        }
+
+        .box2,
+        .box4 {
+            border-top-right-radius: 100%;
+        }
+
+        .box5 {
+            border-bottom-left-radius: 250px 350px;
+            width: 250px;
+            height: 350px;
+        }
+
+        .box6 {
+            border-bottom-right-radius: 250px 350px;
+            width: 250px;
+            height: 350px;
+        }
+
+
+        .text2 {
+            color: red;
+            font-size: 60px;
+            margin-top: 40px;
+            font-style:oblique;
+            text-align: left;
+        }
+
+        .text1 {
+            color: red;
+            font-size: 60px;
+            margin-right: 8px;
+            margin-top: 40px;
+            font-style:oblique;
+            text-align: right;
+        }
+        .text1:hover,.text2:hover{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lovebox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5">
+            <h1 class="text1">老婆不爱你了！</h1>
+        </div>
+        <div class="box6">
+            <h1 class="text2">骗你的，最爱你<br>了</h1>
+        </div>
+
+    </div>
+</body>
+
+</html>

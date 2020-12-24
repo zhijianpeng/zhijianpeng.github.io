@@ -1,0 +1,23 @@
+{
+  "id": "2222449",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "551844",
+      "name": "竖线",
+      "font_class": "vertical_line",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "1160804",
+      "name": "location",
+      "font_class": "location",
+      "unicode": "e834",
+      "unicode_decimal": 59444
+    }
+  ]
+}
